@@ -51,6 +51,7 @@ body {
     color: var(--color-text);
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 2rem;
@@ -105,12 +106,14 @@ body {
     backdrop-filter: blur(15px);
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    padding: 2rem;
+    padding: 3rem;
     max-width: 900px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
+    margin: 60px auto;
+    position: relative;
 }
 
 .timer-heading {
@@ -288,9 +291,11 @@ input:checked+.slider:before {
     transform: translateX(24px);
 }
 
+
+
 /* ========== Footer ========== */
+
 footer {
-    /* this should appear only when scrolled till bottom of page */
     position: fixed;
     bottom: 0;
     left: 0;
@@ -301,7 +306,6 @@ footer {
     display: flex;
     justify-content: center;
     padding: 0.5rem;
-
 }
 
 /* ========== Footer Links ========== */
