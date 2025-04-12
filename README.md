@@ -14,7 +14,7 @@ TypeMaster is a modern, responsive typing speed test tool built using **HTML**, 
 
 ## 🚀 Demo
 
-[👉 View Live Demo](https://rookiedev25.github.io/typemaster/) <!-- Replace with your actual deployed GitHub Pages URL -->
+[👉 View Live Demo](https://rookiedev25.github.io/typeMaster/) <!-- Replace with your actual deployed GitHub Pages URL -->
 
 ## 🧠 Concepts Covered
 
