@@ -37,7 +37,7 @@ body.light-mode {
     --color-restart-btn: #30d158;
     --color-hover: #0f0f0f;
     --color-slider-bg: #ccc;
-    --color-footer: #f5f5f5;
+    --color-footer: #007aff;
     --color-navbar-text: #000;
     --restart-button-bg: #30d158;
     --restart-button-text: #000;
@@ -288,6 +288,34 @@ input:checked+.slider:before {
     transform: translateX(24px);
 }
 
+/* ========== Footer ========== */
+footer {
+    /* this should appear only when scrolled till bottom of page */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-accent);
+    color: var(--color-bg);
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+
+}
+
+/* ========== Footer Links ========== */
+footer a {
+    color: var(--color-bg);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    font-weight: 500;
+}
+
+
 /* ========== Responsive Layout for Tablets and Mobiles ========== */
 @media (max-width: 1024px) {
     #stats {
@@ -344,6 +372,15 @@ input:checked+.slider:before {
         top: 10px;
         right: 10px;
     }
+
+    footer {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    footer a {
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -387,5 +424,9 @@ input:checked+.slider:before {
 
     .toggleSwitchMessage nav {
         font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
     }
 }
