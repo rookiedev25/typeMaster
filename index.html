@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TypeMaster</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+  <div class="toggleSwitchMessage">
+    <nav>Toggle Dark-mode Here</nav>
+  </div>
+  <div class="toggle-wrapper">
+    <label class="switch">
+      <input type="checkbox" id="theme-toggle" />
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="container">
+    <div class="description">
+      <p>
+        <span class="logo">TypeMaster</span>
+        This is a typing speed test that helps you improve your typing skills. It provides a random sentence for you to
+        type, and it measures your typing speed in words per minute (WPM) and accuracy. You can choose different time
+        limits for the test, and it will display your performance statistics after you finish typing. The app also has a
+        dark mode feature for better visibility in low-light conditions.
+      </p>
+    </div>
+    <!-- <h1>Test your typing...</h1> -->
+
+    <div class="timer-buttons">
+      <p>⏳ Timer: <span class="timer-heading"></span></p>
+      <button class="timer-btn" data-time="15">15s</button>
+      <button class="timer-btn" data-time="30">30s</button>
+      <button class="timer-btn" data-time="60">60s</button>
+    </div>
+
+    <div id="stats">
+      <p>⏱ Time Left: <span id="time-left">--</span> s</p>
+      <p>📝 WPM: <span id="wpm">--</span></p>
+      <p>🎯 Accuracy: <span id="accuracy">--</span>%</p>
+      <p>🔡 Characters Typed: <span id="chars-typed">--</span></p>
+    </div>
+
+    <div id="game-area">
+      <div id="sentence-display">A quick brown fox jumps over a lazy dog</div>
+      <textarea id="input-area" placeholder="Click the timer to start the test..." disabled></textarea>
+    </div>
+
+    <button id="restart-btn">Restart</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
